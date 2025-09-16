@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Japan";
+    src: url("/Dyplom/Fonts/NotoSansJP-Thin.woff2") format("woff2"),
+         url("/Dyplom/Fonts/NotoSansJP-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+
+/* На очень маленьких экранах тоже фиксируем */
+@media (max-width: 576px) {
+  .offcanvas.offcanvas-start {
+    max-width: 80%; 
+  }
+  #ImgHome{
+    max-width: 270px; /* Фото входа в ресторан */
+  }
+  .card-body{
+    margin: 0px;
+  }
+  img{
+    max-width: 200px;
+  }
+}
+
+
+body{
+    font-family: "Japan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#offcanvasWithBothOptions{
+    background-color: #FFFFCC;
+    #ImgFish{
+    width: 100px;
+    
+}
+}
+
+
+
+#FirtsMain{
+        margin-top: 30px;
+        text-align: center;
+        .card-title{
+            color: rgb(0, 0, 0);
+        }
+        #ImgMain{
+            border-radius: 20px;
+        }
+
+        .card-body{
+            margin-top: 230px;
+        }
+    }
+#Btn{
+    margin: 20px 0px 0px 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.offcanvas-body{
+
+  .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+    #BtnIcons > button{
+      background-color: transparent;
+      border: none;
+    }
+
+}
+
+.card{
+  padding: 20px;
+  margin: 30px;
+
+  .card-title{
+    margin-top: 20px;
+  }
+  img{
+    width: 500px;
+    height: 300px;
+    border-radius: 1rem;
+  }
+  img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.05); /* увеличение на 5% */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
+}
+
+}
+
+#FiveCard{
+    .card-text{
+    color: black;
+  }
+  img{
+    width: 175px;
+  }
+}
+
+#FootDiv{
+  text-align: center;
+  background-color: gray;
+
+}
+
+
+/* Сделать нормальную кнопку */
