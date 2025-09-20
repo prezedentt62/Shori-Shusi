@@ -14,7 +14,7 @@
   <!-- Выдвигающиеся меню -->
     <div class="Main">
         <div id="MenuBtn">
-            <button class="btn btn-secondary" id="Btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></button>
+            <button class="btn btn-secondary" id="Btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" onmousemove="MenuUp()" onmouseleave="MenuBack()"><p id="BtnMenuText">&#9776</p></button>
 <div class="offcanvas offcanvas-start"  data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div class="offcanvas-header">
     <h3>Nasza reustaracja</h3><img id="ImgFish" src="/Dyplom/Img/Fish.png" alt="ImgLogo">
@@ -24,9 +24,9 @@
     <div id="ImgTextOut">
       <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="/Dyplom/Img/Home.jpg" alt="Img1" style="width: 375px;"></div>
-      <div class="swiper-slide"><img src="/Dyplom/Img/Home2.jpg" alt="Img2" style="width: 375px; height: 282px;"></div>
-      <div class="swiper-slide"><img src="/Dyplom/Img/Home3.jpeg" alt="Img3" style="width: 375px; height: 282px;"></div>
+      <div class="swiper-slide"><img src="/Dyplom/Img/Home.jpg" alt="Img1" ></div>
+      <div class="swiper-slide"><img src="/Dyplom/Img/Home2.jpg" alt="Img2" ></div>
+      <div class="swiper-slide"><img src="/Dyplom/Img/Home3.jpeg" alt="Img3"></div>
     </div>
     <div>
     </div>
@@ -57,8 +57,8 @@
 
         <div id="MainClient" class="container">
             <div class="row">
-                <div class="col-2">
-                    <h2>Shori Shusi</h2>
+                <div class="col-12">
+                    <h2 style="text-align: center;">Shori Shusi</h2>
                 </div>
              </div>
             <div id="Line" >
@@ -66,20 +66,21 @@
             </div>
 
             <!-- Начало Первой карточка страницы -->
-            <div id="FirtsMain" >
-  <div class="row">
-    <div class="col-md-8">
+            <div id="FirtsMain" class="container">
+  <div class="row text-center justify-content-center align-items-center">
+    <div class="col-md-8 col-6">
       <div class="card-body">
         <h1 class="card-title">Menu</h1>
-        <p class="card-text">Przygoda smaków i emocji, który moźecie zomówić na Glovo i Pyszne</p>
+        <p class="card-text">Przygoda smaków i emocji, który możecie zamówić na Glovo i Pyszne</p>
         <button id="BtnMenu" type="button" class="btn btn-danger">Zapoznać się z menu</button>
       </div>
     </div>
-    <div class="col-md-4">
-      <img src="/Dyplom/Img/Menu.jpg" class="img-fluid" id="ImgMain" alt="Menu" style="margin-bottom: 30px;">
+    <div class="col-md-4 col-6">
+      <img src="/Dyplom/Img/Menu.jpg" class="img-fluid mx-auto d-block" id="ImgMain" alt="Menu" >
+    </div>
   </div>
 </div>
-</div>
+
 <div id="Line" >
                 <div class="border-bottom borderborder"></div>
             </div>
@@ -99,7 +100,7 @@
   <div class="col-sm-6 mb-3 mb-sm-0">
     <div class="card">
       <div class="card-body">
-        <img src="/Dyplom/Img/ImgCard/Zupy.jpg" alt="Zupy">
+        <img src="/Dyplom/Img/ImgCard/Zupy.jpg" alt="Zupy" id="Zupy">
         <h5 class="card-title">Особое обращение с заголовком</h5>
         <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
         <button class="btn btn-outline-primary">Naszę Shuhi</button>
@@ -109,7 +110,7 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <img src="/Dyplom/Img/ImgCard/Zupy.jpg" alt="Zupy">
+        <img src="/Dyplom/Img/ImgCard/Zupy.jpg" alt="Zupy" id="Zupy">
         <h5 class="card-title">Особое обращение с заголовком</h5>
         <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
         <button class="btn btn-outline-primary">Zypki Hinski</button>
@@ -124,7 +125,7 @@
   <div class="col-sm-6 mb-3 mb-sm-0">
     <div class="card">
       <div class="card-body">
-        <img src="/Dyplom/Img/ImgCard/Zupy.jpg" alt="Sety">
+        <img src="/Dyplom/Img/ImgCard/Zupy.jpg" alt="Sety" id="Zupy">
         <h5 class="card-title">Особое обращение с заголовком</h5>
         <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
         <button class="btn btn-outline-primary">Super sety</button>
@@ -134,7 +135,7 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <img src="/Dyplom/Img/ImgCard/Zupy.jpg" alt="IDN">
+        <img src="/Dyplom/Img/ImgCard/Zupy.jpg" alt="IDN" id="Zupy">
         <h5 class="card-title">Особое обращение с заголовком</h5>
         <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
         <button class="btn btn-outline-primary">Lorem, ipsum.</button>
@@ -147,61 +148,6 @@
   </div>
 </div>
 <!-- Конец новые 4 карточки -->
-<!-- Начало 5 маленьких карточек -->
- <div id="FiveCard">
-  <div class="row row-cols-1 row-cols-md-5 g-4">
-  <div class="col">
-    <div class="card">
-      <img src="/Dyplom/Img/Menu.jpg" class="card-img-top" alt="Img" >
-      <div class="card-body">
-        <h5 class="card-title">Lorem, ipsum.</h5>
-        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, laborum?</p>
-        <button class="btn btn-outline-primary">Naszę Menu</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="/Dyplom/Img/Menu.jpg" class="card-img-top" alt="Img" >
-      <div class="card-body">
-        <h5 class="card-title">Lorem, ipsum.</h5>
-        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, laborum?</p>
-        <button class="btn btn-outline-primary">Naszę Menu</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="/Dyplom/Img/Menu.jpg" class="card-img-top" alt="Img" >
-      <div class="card-body">
-        <h5 class="card-title">Lorem, ipsum.</h5>
-        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, laborum?</p>
-        <button class="btn btn-outline-primary">Naszę Menu</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="/Dyplom/Img/Menu.jpg" class="card-img-top" alt="Img" >
-      <div class="card-body">
-        <h5 class="card-title">Lorem, ipsum.</h5>
-        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, laborum?Super</p>
-        <button class="btn btn-outline-primary">Naszę Menu</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="/Dyplom/Img/Menu.jpg" class="card-img-top" alt="Img" >
-      <div class="card-body">
-        <h5 class="card-title">Lorem, ipsum.</h5>
-        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, laborum?</p>
-        <button class="btn btn-outline-primary">Naszę Menu</button>
-      </div>
-    </div>
-  </div>
-</div>
- </div>
   </div>
   <div  id="FootDiv">
   <footer ><h2>Wszyski prawa są w bezpecznym mięscu</h2></footer>

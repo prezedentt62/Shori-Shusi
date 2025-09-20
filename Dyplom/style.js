@@ -1,4 +1,5 @@
 const ImgFish = document.getElementById("ImgFish");
+const BtnMenu = document.getElementById("Btn");
 
 function RotateFish() {
 
@@ -25,4 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-  /* Новая ветка */
+  function MenuUp() {
+    BtnMenu.textContent = "Poznać nas";
+    BtnMenu.style.fontSize = "23px";
+    BtnMenu.style.transition = "width 1s ease";
+    BtnMenu.style.width = (BtnMenu.offsetHeight + 100) + "px";
+  }
+  function MenuBack() {
+    BtnMenu.innerHTML = "&#9776;";
+    BtnMenu.style.fontSize = "23px";
+    BtnMenu.style.transition = "width 1s ease";
+    BtnMenu.style.width = "50px";
+  }

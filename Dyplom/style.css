@@ -1,36 +1,93 @@
-@font-face {
-    font-family: "Japan";
-    src: url("/Dyplom/Fonts/NotoSansJP-Thin.woff2") format("woff2"),
-         url("/Dyplom/Fonts/NotoSansJP-Thin.woff") format("woff");
-    font-weight: 100;
-    font-style: normal;
-}
-
-
-
-
-/* На очень маленьких экранах тоже фиксируем */
+/* На Планшеты экранах тоже фиксируем */
 @media (max-width: 576px) {
   .offcanvas.offcanvas-start {
     max-width: 80%; 
   }
-  #ImgHome{
-    max-width: 270px; /* Фото входа в ресторан */
+  /* Фото ресторан */
+  .swiper-slide > img{
+    width: 367px;
+    height: 275px;
   }
-  .card-body{
+  
+  /* Фото  на странице 4 Карточки*/
+    .card-body > #Zupy{
     margin: 0px;
+    width: 180px;
+    height: auto;
   }
-  img{
-    max-width: 200px;
+  #FirtsMain .row {
+    text-align: center;       /* текст и кнопка по центру */
+  }
+
+  #FirtsMain img {
+    display: block;
+    margin: 0 auto 30px auto; /* центрируем картинку */
+  }
+}
+
+/* На Планшеты экранах тоже фиксируем */
+@media (max-width: 768px) {
+  .offcanvas.offcanvas-start {
+    max-width: 80%; 
+  }
+  /* Фото ресторан */
+  .swiper-slide > img{
+    width: 367px;
+    height: 275px;
+  }
+  
+  /* Фото  на странице 4 Карточки*/
+    .card-body > #Zupy{
+    margin: 0px;
+    width: 230px;
+    height: auto;
+  }
+  #FirtsMain .row {
+    text-align: center;       /* текст и кнопка по центру */
+  }
+
+  #FirtsMain img {
+    display: block;
+    margin: 0 auto 30px auto; /* центрируем картинку */
+  }
+}
+/* На Ноутбуки-Мини экранах тоже фиксируем */
+@media (max-width: 992px) {
+  .offcanvas.offcanvas-start {
+    max-width: 80%; 
+  }
+  /* Фото ресторан */
+  .swiper-slide > img{
+    width: 367px;
+    height: 275px;
+  }
+  
+  /* Фото на странице 4 Карточки*/
+    .card-body > #Zupy{
+    margin: 0px;
+    width: 210px;
+    height: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .offcanvas.offcanvas-start {
+    max-width: 80%; 
+  }
+
+  /* Фото ресторан */
+  .swiper-slide > img {
+    max-width: 367px;    
+    height: auto;        
+  }
+
+  /* Фото на странице 4 Карточки */
+  .card-body > #Zupy {
+    max-width: 350px;    
+    height: auto;        
   }
 }
 
 
-body{
-    font-family: "Japan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    overflow-x: hidden;
-
-}
 
 #offcanvasWithBothOptions{
     background-color: #FFFFCC;
@@ -40,28 +97,36 @@ body{
 }
 }
 
+.swiper-wrapper > .swiper-slide > img{
+  width: 367px;
+  height: 275px;
+}
 
 
 #FirtsMain{
-        margin-top: 30px;
-        text-align: center;
         .card-title{
             color: rgb(0, 0, 0);
         }
         #ImgMain{
-            border-radius: 20px;
+          height: 350px;
+          padding: 10px;
+          border-radius: 20px;
         }
 
         .card-body{
-            margin-top: 230px;
+          text-align: start;            
         }
     }
-#Btn{
-    margin: 20px 0px 0px 20px;
-    width: 30px;
-    height: 30px;
-}
 
+    
+#Btn{
+    margin: 20px 0px 0px 100px;
+    width: 50px;
+    height: 50px;
+    #BtnMenuText{
+      font-size: 23px;
+    }
+  }
 .offcanvas-body{
 
   .swiper-slide {
